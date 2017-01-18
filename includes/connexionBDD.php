@@ -7,5 +7,5 @@ include("fonction_oracle.php");
     $session = "root";
     $mdp = "";
     $instance = "mysql:host=localhost;dbname=phalcon-td0";
-    $conn = ConnecterPDO($instance,$session,$mdp);
+    $bdd = ConnecterPDO($instance,$session,$mdp);
 ?>
