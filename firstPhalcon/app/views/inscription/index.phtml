@@ -1,0 +1,21 @@
+<?php use Phalcon\Tag; ?>
+ 
+<h2>Inscription</h2>
+ 
+<?php echo Tag::form("inscription/enregistrement"); ?>
+ 
+ <p>
+    <label for="nom">Nom : </label>
+    <?php echo Tag::textField(array("nom","required")) ?>
+ </p>
+ 
+ <p>
+    <label for="email">Email : </label>
+    <?php echo Tag::emailField("email") ?>
+ </p>
+ 
+ <p>
+    <?php echo Tag::submitButton("Enregistrement") ?>
+ </p>
+ 
+</form>
